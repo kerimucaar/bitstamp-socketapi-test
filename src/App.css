@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.App .field1 {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    font-size: 12px;
+    padding: 10px;
+    border-right: 1px solid gray;
+}
+
+.App .field1 > div {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25px;
+}
+
+.App .field2 {
+    width: 250px;
+    padding: 10px;
+    font-size: 12px;
+    border-left: 1px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 25px);
+}
+
+.App .field3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 25px);
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px solid gray;
+    padding: 10px 0;
+}
+
+.App .mid {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App .mid > div {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
